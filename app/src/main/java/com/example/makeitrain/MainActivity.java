@@ -34,7 +34,10 @@ public class MainActivity extends AppCompatActivity {
     public void setClear(View v)
     {   int i=0;
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
+        moneyCounter=0;
         monetText.setText(String.valueOf(numberFormat.format(i)));
+        monetText.setTextColor(getResources().getColor(R.color.myColor3));
+
         Log.d("MY","onClick: reset Money"  );
 
     }
